@@ -48,9 +48,19 @@ export function updateName(object, newName) {
 // should give back:
 //     { name: "Abe", needsACupOfTea: true }
 export function toggleTeaStatus(object) {
-  const newValue = { ...object, needsACupOfTea: true ? false : true };
+  const newValue = { ...object, needsACupOfTea: !object.needsACupOfTea };
   return newValue;
 }
+//  ternary option: needsACupOfTea: object.needsACupOfTea === true ? false : true
+// function toggleTeaStatus(object) {
+//   let newValue = {};
+//   if (object.needsACupOfTea === true){
+//     newValue = {...object, needsACupOfTea: false}
+//   }else {
+//     newValue = { ...object, needsACupOfTea: true }
+//   }
+//   return newValue;
+// }
 
 // Combo Time!!
 
@@ -60,12 +70,14 @@ export function toggleTeaStatus(object) {
 //    toggleListItemCompleted([{ task: "Cooking", completed: true }, { task: "Walking", completed: false }], 1)
 // should give back:
 //    [{ task: "Cooking", completed: true }, { task: "Walking", completed: true }]
+
 export function toggleListItemCompleted(array, index) {
-  const newObject = { ...array[index], completed: true ? false : true };
+  const newObject = { ...array[index], completed: !array[index].completed};
   const newArray = [
     ...array.slice(0, index),
     newObject,
     ...array.slice(index + 1),
   ];
   return newArray;
+  // const newArray = [...array.slice(0,index), {...array[index], completed: true ? false : true}, ...array.slice(index+1)]
 }
