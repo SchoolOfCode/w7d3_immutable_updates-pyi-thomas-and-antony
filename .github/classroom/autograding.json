@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "addToEnd",
+      "setup": "npm install",
+      "run": "npm test -- -t \"addToEnd\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000000
+    },
+    {
+      "name": "addToBeginning",
+      "setup": "npm install",
+      "run": "npm test -- -t \"addToBeginning\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1000000
+    },
+    {
+      "name": "insertItem",
+      "setup": "npm install",
+      "run": "npm test -- -t \"insertItem\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100000
+    },
+    {
+      "name": "replaceItem",
+      "setup": "npm install",
+      "run": "npm test -- -t \"replaceItem\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10000
+    },
+    {
+      "name": "removeItem",
+      "setup": "npm install",
+      "run": "npm test -- -t \"removeItem\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1000
+    },
+    {
+      "name": "updateName",
+      "setup": "npm install",
+      "run": "npm test -- -t \"updateName\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    },
+    {
+      "name": "toggleTeaStatus",
+      "setup": "npm install",
+      "run": "npm test -- -t \"toggleTeaStatus\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "toggleListItemCompleted",
+      "setup": "npm install",
+      "run": "npm test -- -t \"toggleListItemCompleted\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
